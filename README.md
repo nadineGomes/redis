@@ -1,7 +1,7 @@
 # Redis
 📌 Sobre o projeto
 
-Este repositório apresenta um resumo sobre o Redis, incluindo o que é, casos de uso comuns e um mini projeto de implementação do redis com Node.js.
+Este repositório apresenta um resumo sobre o Redis, incluindo o que é, casos de uso comuns e um mini projeto de implementação de cache.
 
 #### O que é o Redis?
 O Redis é um banco de dados NoSQL, do tipo chave-valor, projetado para ser extremamente rápido.
@@ -58,3 +58,25 @@ $redis-cli -h 127.0.01 -p 6379 -a "senha"
 | `TTL [chave]` | Tempo de vida restante | `TTL nome` |
 | `RENAME [chave] [nova_chave]` | Renomeia uma chave, mas atenção! Se a chave nova já existir, o RENAME irá sobrescrever essa chave, para não sobrescrever use RENAMENX | `RENAME nome novo_nome` |
 | `TYPE [chave]` | Mostra o tipo do valor armazenado | `TYPE frutas` |
+
+---
+
+#### 🔧 Como executar
+
+Clone este repositório:
+```
+git clone https://github.com/nadineGomes/redis.git
+cd redis
+```
+
+Suba os containers:
+```
+docker compose up -d
+```
+
+Acesse a aplicação em http://localhost:3000
+
+🖥️ Resultado esperado
+
+Ao acessar a página, será exibido o número de vezes que a aplicação foi visitada.
+Esse valor é persistido no Redis, que age como cache de armazenamento em memória.
