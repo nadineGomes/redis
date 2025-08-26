@@ -1,7 +1,12 @@
 # Redis
 📌 Sobre o projeto
 
-Este repositório apresenta um resumo sobre o Redis, incluindo o que é, casos de uso comuns e um mini projeto de implementação de cache.
+Além do resumo teórico sobre o Redis, este repositório contém um mini projeto prático que mostra como integrar uma aplicação Node.js com o Redis.
+
+A aplicação consiste em:
+- Um servidor Node.js (Express) super simples;
+- Um contador de visitas armazenado no Redis;
+- Infraestrutura orquestrada com Docker Compose.
 
 #### O que é o Redis?
 O Redis é um banco de dados NoSQL, do tipo chave-valor, projetado para ser extremamente rápido.
