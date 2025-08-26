@@ -1,0 +1,25 @@
+{
+  "name": "redis",
+  "version": "1.0.0",
+  "description": "📌 Sobre o projeto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "redis": "^4.6.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadineGomes/redis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nadineGomes/redis/issues"
+  },
+  "homepage": "https://github.com/nadineGomes/redis#readme"
+}

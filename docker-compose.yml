@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  node-app:
+    build: ./node-app
+    ports:
+      - "3000:3000"
+    networks:
+    - default      
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
